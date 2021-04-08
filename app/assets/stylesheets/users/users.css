@@ -1,0 +1,133 @@
+.sign-all {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/assets/coffee-2562435_1280.webp");
+  background-size: cover;
+}
+
+.sign-all .head-area {
+  height: 100px;
+  background-color: rgba(92, 86, 86, 0.466);
+}
+
+.sign-all .sign-main {
+  height: calc(100vh - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sign-all .sign-main .sign-header {
+  width: 50%;
+}
+
+.sign-all .sign-main .sign-header .sign-title {
+  margin-top: 2vh;
+  text-align: center;
+  height: 15%;
+  font-size: 4em;
+  color: rgba(255, 255, 255, 0.774);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sign-all .sign-main .sign-header .error-message {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  margin: 10%;
+  text-shadow: 5px 5px 5px black;
+}
+
+.sign-all .sign-main .sign-header .error-message ul {
+  margin-top: 3vh;
+}
+
+.sign-all .sign-main .sign-header .error-message ul li {
+  margin-top: 1vh;
+}
+
+.sign-all .sign-main .form-group {
+  width: 50%;
+  margin: 10%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sign-all .sign-main .form-group .field-user {
+  color: rgba(255, 255, 255, 0.712);
+  margin-bottom: 3vh;
+}
+
+.sign-all .sign-main .form-group .field-user .user-label {
+  font-size: 2em;
+  text-shadow: 5px 5px 5px black;
+}
+
+.sign-all .sign-main .form-group .field-user .user-field {
+  width: 30vw;
+  height: 5vh;
+  background-color: rgba(255, 255, 255, 0.24);
+  outline: none;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  font-size: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.sign-all .sign-main .form-group .clearfix#contentBox #tenth button {
+  width: 30.5vw;
+  height: 5vh;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  background-color: rgba(255, 255, 255, 0.24);
+  outline: none;
+  color: white;
+}
+
+.sign-all .sign-main .form-group .clearfix#contentBox #tenth button span {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  display: inline-block;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: sign-slide;
+          animation-name: sign-slide;
+}
+
+.sign-all .sign-main .form-group .clearfix#contentBox #tenth button span:hover {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: sign-jump;
+          animation-name: sign-jump;
+}
+
+@-webkit-keyframes sign-slide {
+  0% {
+    -webkit-transform: translateX(-2000%) rotateZ(-1080deg);
+            transform: translateX(-2000%) rotateZ(-1080deg);
+    color: black;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sign-slide {
+  0% {
+    -webkit-transform: translateX(-2000%) rotateZ(-1080deg);
+            transform: translateX(-2000%) rotateZ(-1080deg);
+    color: black;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=users.css.map */

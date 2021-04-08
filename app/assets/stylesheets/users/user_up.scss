@@ -1,0 +1,174 @@
+// サインアップのビュー
+.sign-all {
+  height: 100vh;
+  width: 100vw;
+  & .head-area {
+    height: 100px;
+    background-color: rgb(3, 2, 56);
+  }
+  // サインインのビューのスタイル
+  & .sign-main {
+    height: calc(100vh - 100px);
+    display: flex;
+    position: relative;
+    & .back-img {
+      position: absolute;
+      top: 0%;
+      left: 20%;
+      background-image: url('/assets/coffee-2562435_1280.webp');
+      background-size: cover;
+      height: calc(100vh - 100px);
+      width: 80vw;
+    }
+    & .sign-header {
+      width: 50%;
+      // Sign up（タイトル）のスタイル
+      & .sign-title {
+        margin-top: 2vh;
+        text-align: end;
+        height: 15%;
+        font-size: 4em;
+        color: rgba(8, 8, 8, 0.438);
+        font-family: Rubik;
+        & span {
+          display: inline-block;
+          animation-duration: 0.8s;
+          animation-name: sign-title;
+          animation-fill-mode: both;
+          @for $i from 1 through 7 {
+            &:nth-child(#{$i}) {
+                animation-delay: $i * 0.1s;
+              
+            }
+          }
+        }
+      }
+      // エラーメッセージ
+      & .error-message {
+        color: white;
+        font-family: Rubik;
+        font-size: 1.5em;
+        margin:10%;
+        text-shadow: 5px 5px 5px black;
+        display: contents;
+        & ul {
+          margin-top: 3vh;
+          & li {
+            margin-top: 1vh;
+          }
+        }
+        & #error_explanation {
+          animation-name: error-anime;
+          animation-duration: 3s;
+          opacity: 0;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+    // フォームのスタイル
+    & .form-group {
+      width: 50%;
+      margin:10%;
+      font-family: Rubik;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      // フォームのスタイル
+      & .field-user {
+        color:  rgba(255, 255, 255, 0.712);
+        margin-bottom: 3vh;
+        // ラベルのスタイル
+        & .user-label {
+          font-size: 2em;
+          text-shadow: 5px 5px 5px black;
+        }
+        // テキストフィールドのスタイル
+        & .user-field {
+          width: 30vw;
+          height: 5vh;
+          background-color: rgba(255, 255, 255, 0.24);
+          outline: none;
+          box-shadow: 5px 5px 5px black;
+          font-size: 1.5em;
+          font-family: Rubik;
+          color: white;
+        }
+      }
+      // ボタンのスタイル
+      & .clearfix {
+        &#contentBox {
+          & #tenth {
+            & button {
+              width: 30.5vw;
+              height: 5vh;
+              box-shadow: 5px 5px 5px black;
+              background-color: rgba(255, 255, 255, 0.24);
+              outline: none;
+              color: white;
+
+              & span {
+                font-family: Rubik;
+                font-size: 1.5em;
+                display: inline-block;  
+                animation-duration: 2s;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+                animation-name: sign-slide;
+
+                &:hover {
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                animation-name: sign-jump;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes sign-slide {
+  0% {
+    transform: translateX(-2000%) rotateZ(-1080deg);
+    color: black;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+// エラーのアニメーション
+@keyframes error-anime{
+  0%{
+    transform: translateY(-80%);
+    opacity: 0;
+  }
+  60%{
+    transform: translateY(100%);
+    opacity: 0.6;
+  }
+
+  60%{
+    transform: translateX(0%);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateX(45%);
+    opacity: 1;
+  }
+}
+// タイトルのアニメーション
+@keyframes sign-title {
+  0%{
+    transform: translateY(-150%);
+    color: black;
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    color: rgba(250, 221, 221, 0.836);
+    opacity: 1;
+  }
+}

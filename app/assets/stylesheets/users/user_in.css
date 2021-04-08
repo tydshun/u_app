@@ -1,0 +1,254 @@
+.sign-all {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/assets/coffee-4363403_1280.jpg");
+  background-size: cover;
+}
+
+.sign-all .head-area {
+  height: 100px;
+  background-color: rgba(92, 86, 86, 0.466);
+}
+
+.sign-all .sign-main {
+  height: calc(100vh - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sign-all .sign-main .sign-header {
+  width: 50%;
+}
+
+.sign-all .sign-main .sign-header .sign-title {
+  margin-top: 2vh;
+  text-align: center;
+  height: 15%;
+  font-size: 4em;
+  color: rgba(255, 255, 255, 0.774);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sign-all .sign-main .sign-header .sign-title span {
+  display: inline-block;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-name: sign-title;
+          animation-name: sign-title;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.sign-all .sign-main .sign-header .sign-title span:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.sign-all .sign-main .sign-header .sign-title span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.sign-all .sign-main .sign-header .sign-title span:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.sign-all .sign-main .sign-header .sign-title span:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.sign-all .sign-main .sign-header .sign-title span:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.sign-all .sign-main .sign-header .sign-title span:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.sign-all .sign-main .sign-header .sign-title span:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.sign-all .sign-main .sign-header .error-message {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  margin: 10%;
+  text-shadow: 5px 5px 5px black;
+  display: inline-block;
+  -webkit-animation-name: error-anime;
+          animation-name: error-anime;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.sign-all .sign-main .form-group {
+  width: 50%;
+  margin: 10%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sign-all .sign-main .form-group .field-user {
+  color: rgba(255, 255, 255, 0.712);
+  margin-bottom: 3vh;
+}
+
+.sign-all .sign-main .form-group .field-user .user-label {
+  font-size: 2em;
+  text-shadow: 5px 5px 5px black;
+}
+
+.sign-all .sign-main .form-group .field-user .user-field {
+  width: 30vw;
+  height: 5vh;
+  background-color: rgba(255, 255, 255, 0.24);
+  outline: none;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  font-size: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.sign-all .sign-main .form-group .clearfix#contentBox #tenth button {
+  width: 30.5vw;
+  height: 5vh;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  background-color: rgba(255, 255, 255, 0.24);
+  outline: none;
+  color: white;
+}
+
+.sign-all .sign-main .form-group .clearfix#contentBox #tenth button span {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  display: inline-block;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: sign-slide;
+          animation-name: sign-slide;
+}
+
+.sign-all .sign-main .form-group .clearfix#contentBox #tenth button span:hover {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: sign-jump;
+          animation-name: sign-jump;
+}
+
+@-webkit-keyframes sign-slide {
+  0% {
+    -webkit-transform: translateX(-2000%) rotateZ(-1080deg);
+            transform: translateX(-2000%) rotateZ(-1080deg);
+    color: black;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sign-slide {
+  0% {
+    -webkit-transform: translateX(-2000%) rotateZ(-1080deg);
+            transform: translateX(-2000%) rotateZ(-1080deg);
+    color: black;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes error-anime {
+  0% {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0.6;
+  }
+  60% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+    opacity: 1;
+  }
+}
+
+@keyframes error-anime {
+  0% {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0.6;
+  }
+  60% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes sign-title {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    color: black;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    color: white;
+    opacity: 1;
+  }
+}
+
+@keyframes sign-title {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    color: black;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    color: white;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=user_in.css.map */
